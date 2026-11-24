@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Daniel Castro">
+  <defs>
+    <mask id="d-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <rect width="512" height="512" fill="#fff"/>
+      <path d="M90 438L410 118" stroke="#000" stroke-width="60"/>
+    </mask>
+    <clipPath id="d-shape">
+      <path d="M121 105H236A151 151 0 0 1 236 407H121Z"/>
+    </clipPath>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="#07080A"/>
+  <path mask="url(#d-cut)" fill="none" stroke="#D9B45A" stroke-width="58" stroke-miterlimit="10" d="M150 134H236A122 122 0 0 1 236 378H150Z"/>
+  <path clip-path="url(#d-shape)" fill="none" stroke="#3AB4EF" stroke-width="30" d="M90 438L410 118"/>
+</svg>
