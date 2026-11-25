@@ -41,7 +41,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=2">
+<link rel="stylesheet" href="css/styles.css?v=3">
 <script>(function(d){d.classList.add('js');try{if(!sessionStorage.getItem('dcm-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('has-intro');sessionStorage.setItem('dcm-intro','1')}}catch(e){}})(document.documentElement)</script>
 </head>
 <body>
@@ -208,7 +208,11 @@
               <h3><a href="https://camisetas-de-futbol.github.io/player-version/" target="_blank" rel="noopener">Player Version</a></h3>
               <p class="work-meta">Tienda online · Écija</p>
             </div>
-            <p class="work-desc">Marca de camisetas de fútbol. Catálogo de 336 camisetas por ligas y selecciones, ficha de cada producto y pedido directo por Instagram.</p>
+            <dl class="work-ps">
+              <div><dt>El problema</dt><dd>Con cientos de camisetas, en Instagram no había forma de ver todo el catálogo ni buscar tu equipo.</dd></div>
+              <div><dt>Lo que hice</dt><dd>Una tienda con 336 camisetas ordenadas por ligas y selecciones, ficha de cada una y pedido directo por Instagram.</dd></div>
+            </dl>
+            <p class="work-plan">Paquete <a href="#precios">Catálogo o citas</a></p>
             <span class="work-go" aria-hidden="true"><svg class="ico"><use href="#i-out"/></svg></span>
           </div>
         </article>
@@ -224,7 +228,11 @@
               <h3><a href="https://filo-barber-demo.netlify.app/" target="_blank" rel="noopener">Filo Barber</a></h3>
               <p class="work-meta">Barbería · Demo</p>
             </div>
-            <p class="work-desc">Servicios con precio, galería de cortes, un horario que avisa si está abierto ahora mismo y cita desde el móvil.</p>
+            <dl class="work-ps">
+              <div><dt>El problema</dt><dd>Una barbería pierde clientes si para pedir cita hay que llamar mientras el barbero está cortando.</dd></div>
+              <div><dt>Lo que hice</dt><dd>Servicios con precio, galería de cortes, un horario que avisa si está abierto ahora y cita desde el móvil.</dd></div>
+            </dl>
+            <p class="work-plan">Paquete <a href="#precios">Catálogo o citas</a></p>
             <span class="work-go" aria-hidden="true"><svg class="ico"><use href="#i-out"/></svg></span>
           </div>
         </article>
@@ -240,7 +248,11 @@
               <h3><a href="https://propuesta-duo-innova.netlify.app/" target="_blank" rel="noopener">Duo Innova</a></h3>
               <p class="work-meta">Reformas · Propuesta</p>
             </div>
-            <p class="work-desc">Sus trabajos con fotos reales, servicios, opiniones y un botón claro para pedir presupuesto.</p>
+            <dl class="work-ps">
+              <div><dt>El problema</dt><dd>Sus reformas se veían solo en redes, y quien buscaba en Google no encontraba dónde pedir presupuesto.</dd></div>
+              <div><dt>Lo que hice</dt><dd>Sus trabajos con fotos reales, servicios, opiniones y un botón claro para pedir presupuesto.</dd></div>
+            </dl>
+            <p class="work-plan">Paquete <a href="#precios">Web completa</a> · desde 350 €</p>
             <span class="work-go" aria-hidden="true"><svg class="ico"><use href="#i-out"/></svg></span>
           </div>
         </article>
@@ -288,7 +300,7 @@
     <div class="wrap">
       <p class="eyebrow reveal">Precios</p>
       <h2 id="precios-h" class="h2 reveal">Precio <em>cerrado</em>.</h2>
-      <p class="intro reveal">Lo que hablamos es lo que pagas. Y la propuesta la ves antes de pagar nada.</p>
+      <p class="intro reveal">Lo que hablamos es lo que pagas, y la propuesta la ves antes de pagar nada. Si dudas, la <strong>web completa</strong> es la que recomiendo a casi todos los negocios.</p>
       <div class="plans">
         <article class="plan reveal">
           <p class="plan-name">Web de una página</p>
@@ -300,10 +312,11 @@
             <li><svg class="ico"><use href="#i-check"/></svg>Mapa para llegar a tu local</li>
             <li><svg class="ico"><use href="#i-check"/></svg>Pensada para el móvil</li>
           </ul>
-          <p class="plan-for">Para bares, peluquerías, talleres y tiendas pequeñas.</p>
+          <p class="plan-for">Para empezar a estar en internet: bares, peluquerías, talleres y tiendas pequeñas.</p>
+          <p class="plan-up">¿Quieres salir en Google y enseñar tus trabajos? Por 200 € más tienes la <a href="#plan-completa">web completa</a>.</p>
           <a class="btn btn--line btn--wide" href="https://wa.me/34603833919?text=Hola%20Daniel%2C%20me%20interesa%20la%20web%20de%20una%20p%C3%A1gina%20para%20mi%20negocio." target="_blank" rel="noopener">La quiero <span class="btn-ico"><svg class="ico"><use href="#i-arrow"/></svg></span></a>
         </article>
-        <article class="plan plan--main reveal">
+        <article class="plan plan--main reveal" id="plan-completa">
           <p class="plan-flag">La que te recomiendo</p>
           <p class="plan-name">Web completa</p>
           <p class="plan-price"><span>desde</span><b data-count>350</b> €</p>
@@ -314,8 +327,9 @@
             <li><svg class="ico"><use href="#i-check"/></svg>Galería con tus fotos</li>
             <li><svg class="ico"><use href="#i-check"/></svg>Lista para salir en Google</li>
           </ul>
+          <p class="plan-why">Google te encuentra, y quien entra ve tus trabajos, tus precios y lo que opinan de ti. Es lo que hace que te escriban.</p>
           <p class="plan-for">Ejemplo: <a href="https://propuesta-duo-innova.netlify.app/" target="_blank" rel="noopener">Duo Innova</a></p>
-          <a class="btn btn--gold btn--wide" href="https://wa.me/34603833919?text=Hola%20Daniel%2C%20me%20interesa%20la%20web%20completa%20para%20mi%20negocio." target="_blank" rel="noopener">La quiero <span class="btn-ico"><svg class="ico"><use href="#i-arrow"/></svg></span></a>
+          <a class="btn btn--gold btn--wide" href="https://wa.me/34603833919?text=Hola%20Daniel%2C%20me%20interesa%20la%20web%20completa%20para%20mi%20negocio." target="_blank" rel="noopener">Quiero la web completa <span class="btn-ico"><svg class="ico"><use href="#i-arrow"/></svg></span></a>
         </article>
         <article class="plan reveal">
           <p class="plan-name">Catálogo o citas</p>
@@ -337,6 +351,26 @@
         <div><dt>Alojamiento</dt><dd>0 €. Tu web funciona en tu dominio sin pagar servidor cada mes.</dd></div>
         <div><dt>Forma de pago</dt><dd>La mitad cuando apruebas la propuesta y la otra mitad al publicarla.</dd></div>
       </dl>
+    </div>
+  </section>
+
+  <!-- PROPUESTA -->
+  <section class="cta-sec" id="propuesta" aria-labelledby="cta-h">
+    <div class="wrap">
+      <div class="cta-box">
+        <img class="cta-av reveal" src="img/daniel-avatar.jpg" width="200" height="200" alt="" loading="lazy">
+        <h2 id="cta-h" class="h2 reveal">¿Tu negocio todavía<br>no tiene <em>página web</em>?</h2>
+        <p class="cta-sub reveal">Cuéntame qué necesitas y te preparo una propuesta sin compromiso. La ves en tu móvil y, si no te convence, no pagas nada.</p>
+        <div class="cta-actions reveal">
+          <a class="btn btn--gold" href="https://wa.me/34603833919?text=Hola%20Daniel%2C%20mi%20negocio%20todav%C3%ADa%20no%20tiene%20p%C3%A1gina%20web.%20%C2%BFMe%20preparas%20una%20propuesta%20sin%20compromiso%3F" target="_blank" rel="noopener">Pedir mi propuesta <span class="btn-ico"><svg class="ico"><use href="#i-wa"/></svg></span></a>
+          <a class="btn btn--line" href="#proyectos">Ver ejemplos</a>
+        </div>
+        <ul class="cta-points reveal">
+          <li><svg class="ico"><use href="#i-check"/></svg>Propuesta gratis</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Sin compromiso</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Te respondo en menos de 24 h</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -458,6 +492,6 @@
 
 <a class="wa-float" href="https://wa.me/34603833919?text=Hola%20Daniel%2C%20he%20visto%20tu%20web%20y%20quiero%20informaci%C3%B3n%20sobre%20una%20p%C3%A1gina%20web." target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp"><svg class="ico"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
 
-<script src="js/main.js?v=2"></script>
+<script src="js/main.js?v=3"></script>
 </body>
 </html>
